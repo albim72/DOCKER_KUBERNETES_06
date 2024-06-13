@@ -9,3 +9,5 @@ Komenda 6 -> wyświetlenie wszytkich wpisów w rejestrze zapisanym przez kontene
 Komenda 7 -> wyświetlenie szczegółowych onformacji o kontenerze: docker container inspect 829ef94e7984
 Komenda 8 -> uruchomienie aplikacji webowej w tle: docker container run --detach --publish 8088:80 diamol/ch02-hello-diamol-web
 Komenda 9 -> usuwanie wszystkich kontenerów: docker container rm --force $(docker container ls --all --quiet)
+Komenda 10 -> wykonanie kontenera na podstawie pobranego obrazu: docker image pull diamol/ch03-web-ping
+Komenda 11 -> uruchomienie aplikacji webowejw  kontemerze dpcker: docker container run -d --name web-ping diamol/ch03-web-ping
