@@ -19,3 +19,10 @@ Komenda 16 -> Ururchomienie kontenera na podstawie utworzonego obrazu, tak by ap
 Komenda 17 ->wyświetlenie hisotrii obrazu kontenera: docker image history web-ping
 Komenda 18 ->wyświetlenie wszytskich obrazów: docker image ls
 Komenda 19 ->wyświetlenie wagi obiektów docker: docker system df
+
+
+Zadanie - Python-sigmoid
+
+1. Wejście do katalogu projektu: cd sigmoid_
+2. budowa kontenera:  docker build -t sigmoid-python .
+3. uruchamianie obrazy kontenera w trybie interaktywnym: docker container run --interactive --tty sigmoid-python
