@@ -7,3 +7,5 @@ Komenda 4 -> uruchomienie interakcyjnego kontenera: docker container run --inter
 Komenda 5 -> podgląd informacji o działających kontenerach: docker container ls
 Komenda 6 -> wyświetlenie wszytkich wpisów w rejestrze zapisanym przez kontener: docker container logs 829ef94e7984
 Komenda 7 -> wyświetlenie szczegółowych onformacji o kontenerze: docker container inspect 829ef94e7984
+Komenda 8 -> uruchomienie aplikacji webowej w tle: docker container run --detach --publish 8088:80 diamol/ch02-hello-diamol-web
+
