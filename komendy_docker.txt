@@ -10,4 +10,7 @@ Komenda 7 -> wyświetlenie szczegółowych onformacji o kontenerze: docker conta
 Komenda 8 -> uruchomienie aplikacji webowej w tle: docker container run --detach --publish 8088:80 diamol/ch02-hello-diamol-web
 Komenda 9 -> usuwanie wszystkich kontenerów: docker container rm --force $(docker container ls --all --quiet)
 Komenda 10 -> wykonanie kontenera na podstawie pobranego obrazu: docker image pull diamol/ch03-web-ping
-Komenda 11 -> uruchomienie aplikacji webowejw  kontemerze dpcker: docker container run -d --name web-ping diamol/ch03-web-ping
+Komenda 11 -> uruchomienie aplikacji webowej w  kontemerze docker: docker container run -d --name web-ping diamol/ch03-web-ping
+Komenda 12 -> usunięcie kontenera: docker rm -f web-ping
+Komenda 13 -> uruchomienie aplikacji webowej ze zmieną środowiskową TARGET (definiującą adres serwera): docker container run --env TARGET=google.com diamol/ch03-web-ping
+
