@@ -5,4 +5,5 @@ Komenda 2 -> wersja docker-compose: docker-compose version
 Komenda 3 -> uruchamianie kontenera z pakietu diamol: docker container run diamol/ch02-hello-diamol
 Komenda 4 -> uruchomienie interakcyjnego kontenera: docker container run --interactive --tty diamol/base
 Komenda 5 -> podgląd informacji o działających kontenerach: docker container ls
-
+Komenda 6 -> wyświetlenie wszytkich wpisów w rejestrze zapisanym przez kontener: docker container logs 829ef94e7984
+Komenda 7 -> wyświetlenie szczegółowych onformacji o kontenerze: docker container inspect 829ef94e7984
