@@ -15,3 +15,4 @@ Komenda 12 -> usunięcie kontenera: docker rm -f web-ping
 Komenda 13 -> uruchomienie aplikacji webowej ze zmieną środowiskową TARGET (definiującą adres serwera): docker container run --env TARGET=google.com diamol/ch03-web-ping
 Komenda 14 -> przekształcenie dockerfile w obraz Dockera: 
 Komenda 15 -> wyświetlenie wszystkich pbrazów zaczynająch się na kiterę w:  docker ls 'w*'
+Komenda 16 -> Ururchomienie kontenera na podstawie utworzonego obrazu, tak by aplikacja sprawdzała dostępność strony co 5sekund: docker container run -e TARGET=docker.com -e INTERVAL=5000 web-ping
