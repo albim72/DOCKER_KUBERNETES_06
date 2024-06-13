@@ -17,3 +17,5 @@ Komenda 14 -> przekształcenie dockerfile w obraz Dockera:
 Komenda 15 -> wyświetlenie wszystkich pbrazów zaczynająch się na kiterę w:  docker ls 'w*'
 Komenda 16 -> Ururchomienie kontenera na podstawie utworzonego obrazu, tak by aplikacja sprawdzała dostępność strony co 5sekund: docker container run -e TARGET=docker.com -e INTERVAL=5000 web-ping
 Komenda 17 ->wyświetlenie hisotrii obrazu kontenera: docker image history web-ping
+Komenda 18 ->wyświetlenie wszytskich obrazów: docker image ls
+Komenda 19 ->wyświetlenie wagi obiektów docker: docker system df
