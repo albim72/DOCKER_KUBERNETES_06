@@ -1,0 +1,4 @@
+Komendy platformy Docker:
+
+Komenda 1 -> wersja dockera: docker version
+Komenda 2 -> wersja docker-compose: docker-compose version
