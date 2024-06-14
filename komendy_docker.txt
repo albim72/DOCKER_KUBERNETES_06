@@ -51,3 +51,5 @@ Komenda 24 -> Uruchomienie aplikacji image-of-the-day
 KUBERNETES
 
 Komenda 24 -> narzędzie wiersza poleceń klastra Kubernetes:  kubectl get nodes
+Komenda 25 -> uruchomienie kapsuły Kubernetes :  kubectl run hello-kiamol --image=kiamol/ch02-hello-kiamol --restart=Never
+
