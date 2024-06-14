@@ -93,5 +93,12 @@ Komenda 43 -> wdrożenie usługi opartej na serwisie:
   kubectl get svc sleep-2
   kubectl exec deploy/sleep-1 -- ping -c 1 sleep-2
 
+Komenda 44 -> uruchomienie aplikacji www z api
+ strona www jako wdrożenie: kubectl apply -f numbers/api.yaml -f  numbers/web.yaml
+oczekiwanie na gotowość kapsuly: kubectl wait --for=condition=Ready pod -l app=numbers-web
+przekierowanie portu: kubectl port=forward deploy/numbers-web 8080:80
+ ++++++++++++++++++++++++++
+wdrożenie usługi: kubectl apply -f numbers/api-service.yaml
+przekierowanie portu do aplikacji:  kubectl port-forward deploy/numbers-web 8080:80
 
 
