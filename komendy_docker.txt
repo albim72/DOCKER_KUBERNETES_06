@@ -48,3 +48,6 @@ Komenda 24 -> Uruchomienie aplikacji image-of-the-day
   C:\diamol\ch07\exercises> cd image-of-the-day
   docker-compose up --detach
 
+KUBERNETES
+
+Komenda 24 -> narzędzie wiersza poleceń klastra Kubernetes:  kubectl get nodes
