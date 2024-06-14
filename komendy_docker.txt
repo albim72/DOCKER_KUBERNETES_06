@@ -44,3 +44,7 @@ Komenda 23 -> Uruchamianie prostej aplikacji Docker Compose
       uruchomienie docker compose:  docker-compose up
       wpisanie adresu: localhost:8020
 
+Komenda 24 -> Uruchomienie aplikacji image-of-the-day
+  C:\diamol\ch07\exercises> cd image-of-the-day
+  docker-compose up --detach
+
