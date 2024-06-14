@@ -55,5 +55,6 @@ Komenda 25 -> uruchomienie kapsuły Kubernetes :  kubectl run hello-kiamol --ima
 Komenda 26 -> oczekiwanie aż kapsuła będzie gotowa: kubectl wait --for=condition=Ready pod hello-kiamol
 Komenda 27 -> wyświetlenie wszystkich kapsuł w klastrze: kubectl get pods
 Komenda 28 -> wyświetlenie szczegółowych informacji o kapsule:  kubectl describe pod hello-kiamol
+Komenda 29 -> określenie niestandardowycch kolumn w danych wyjściowych:  kubectl get pod hello-kiamol --output custom-columns=NAME:metadata.name,NODE_IP:status.hostIP,POD_IP:status.podI
 
 
