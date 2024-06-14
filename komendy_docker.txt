@@ -67,4 +67,4 @@ Komenda 33 -> uruchomienie aplikacji www:
 
 Komenda 34 -> utowrzenie nowego wdrożenia: kubectl create deployment hello-kiamol-2 --image=kiamol/ch02-hello-kiamol
 Konenda 35 -> wypisanie etykiet (json):  kubectl get deploy hello-kiamol-2 -o jsonpath='{.spec.template.metadata.labels}'
-Komenda 36 -> wyświetlenie listy kapsuł, które mają pasującą etykietę:  kubectl get deploy hello-kiamol-2 -o jsonpath='{.spec.template.metadata.labels}'
+Komenda 36 -> wyświetlenie listy kapsuł, które mają pasującą etykietę:  kubectl get pods -l app=hello-kiamol-2
