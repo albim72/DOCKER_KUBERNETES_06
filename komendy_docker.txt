@@ -65,6 +65,6 @@ Komenda 33 -> uruchomienie aplikacji www:
       kubectl port-forward pod/hkiamol 8080:80
       uruchom stronę: localhost:8080
 
-      
-
-
+Komenda 34 -> utowrzenie nowego wdrożenia: kubectl create deployment hello-kiamol-2 --image=kiamol/ch02-hello-kiamol
+Konenda 35 -> wypisanie etykiet (json):  kubectl get deploy hello-kiamol-2 -o jsonpath='{.spec.template.metadata.labels}'
+Komenda 36 -> wyświetlenie listy kapsuł, które mają pasującą etykietę:  kubectl get deploy hello-kiamol-2 -o jsonpath='{.spec.template.metadata.labels}'
