@@ -27,10 +27,16 @@ Zadanie - Python-sigmoid
 2. budowa kontenera:  docker build -t sigmoid-python .
 3. uruchamianie obrazy kontenera w trybie interaktywnym: docker container run --interactive --tty sigmoid-python
 
+
 ________________________________________________________________________________________________
 
 wejście do katalogu multi-stage:  C:\diamol\ch04\exercises\multi-stage
 Komenda 20 -> utworzenie obrazu z wieloetapowego dockerfile: docker image build -t multi-stage .
 Komenda 21 -> uruchomienie kontenera z obrazu: docker run multi-stage
+
+Komenda 22 -> Obraz aplikacji JAVA:
+  docker image build -t image-of-the-day
+  docker network create nat
+  docker image run --name iotd -d -p 800:80 --network nat image-of-the-day
 
 
