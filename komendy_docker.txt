@@ -76,4 +76,11 @@ Komenda 38 -> przywracanie starej nazwy kapsule: kubectl label pods -l app=hello
 Komenda 39 -> wdrożenie aplikacji z pliku manifestu> kubectl apply -f pod.yaml
 Komenda 40 -> wdrożenie aplikacji z manifestu opublikowanego na adresie URL: kubectl apply -f https://raw.githubusercontent.com/sixeyed/kiamol/master/ch02/pod.yaml
 
+Komenda 41 -> pingowanie jednej kapsuły z poziomu drugiej:
+  cd ch03
+  kubectl wait --for=condition=Ready pod -l app=sleep-2
+  kubectl get pod -l app=sleep-2 --output jsonpath='{.items[0].status.podIP}'
+  kubectl exec deploy/sleep-1 -- ping -c 2 $(kubectl get pod -l app=sleep-2 --output  jsonpath='{.items[0].status.podIP}')
+
+
 
