@@ -57,5 +57,7 @@ Komenda 27 -> wyświetlenie wszystkich kapsuł w klastrze: kubectl get pods
 Komenda 28 -> wyświetlenie szczegółowych informacji o kapsule:  kubectl describe pod hello-kiamol
 Komenda 29 -> określenie niestandardowycch kolumn w danych wyjściowych:  kubectl get pod hello-kiamol --output custom-columns=NAME:metadata.name,NODE_IP:status.hostIP,POD_IP:status.podI
 Komenda 30 -> wyszukiwanie kontemeara danej kapsuły: docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol
+Komenda 31 -> usunięcie kontenera:  docker container rm -f $(docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol)
+Komenda 32 -> przywracanie kontenera do kapsuły: docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol
 
 
