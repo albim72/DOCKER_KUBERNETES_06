@@ -59,5 +59,12 @@ Komenda 29 -> określenie niestandardowycch kolumn w danych wyjściowych:  kubec
 Komenda 30 -> wyszukiwanie kontemeara danej kapsuły: docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol
 Komenda 31 -> usunięcie kontenera:  docker container rm -f $(docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol)
 Komenda 32 -> przywracanie kontenera do kapsuły: docker container ls -q --filter label=io.kubernetes.container.name=hello-kiamol
+Komenda 33 -> uruchomienie aplikacji www:
+     kubectl run hkiamol --image=kiamol/ch02-hello-kiamol --restart=Never
+      kubectl get pod hkiamol
+      kubectl port-forward pod/hkiamol 8080:80
+      uruchom stronę: localhost:8080
+
+      
 
 
