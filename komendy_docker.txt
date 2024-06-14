@@ -26,3 +26,11 @@ Zadanie - Python-sigmoid
 1. Wejście do katalogu projektu: cd sigmoid_
 2. budowa kontenera:  docker build -t sigmoid-python .
 3. uruchamianie obrazy kontenera w trybie interaktywnym: docker container run --interactive --tty sigmoid-python
+
+________________________________________________________________________________________________
+
+wejście do katalogu multi-stage:  C:\diamol\ch04\exercises\multi-stage
+Komenda 20 -> utworzenie obrazu z wieloetapowego dockerfile: docker image build -t multi-stage .
+Komenda 21 -> uruchomienie kontenera z obrazu: docker run multi-stage
+
+
