@@ -52,4 +52,6 @@ KUBERNETES
 
 Komenda 24 -> narzędzie wiersza poleceń klastra Kubernetes:  kubectl get nodes
 Komenda 25 -> uruchomienie kapsuły Kubernetes :  kubectl run hello-kiamol --image=kiamol/ch02-hello-kiamol --restart=Never
+Komenda 26 -> oczekiwanie aż kapsuła będzie gotowa: kubectl wait --for=condition=Ready pod hello-kiamol
+
 
