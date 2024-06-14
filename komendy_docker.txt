@@ -39,4 +39,8 @@ Komenda 22 -> Obraz aplikacji JAVA:
   docker network create nat
   docker image run --name iotd -d -p 800:80 --network nat image-of-the-day
 
+Komenda 23 -> Uruchamianie prostej aplikacji Docker Compose
+      opcjonlne utworzenie sieci: docker network create nat
+      uruchomienie docker compose:  docker-compose up
+      wpisanie adresu: localhost:8020
 
