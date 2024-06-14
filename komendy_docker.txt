@@ -73,5 +73,6 @@ Komenda 37 -> dodanie nowej kapsuły opartej na zdefinjowanej etykiecie z nową 
     kubectl label pods -l app=hello-kiamol-2 --overwrite app=hello-kiamol-y
 
 Komenda 38 -> przywracanie starej nazwy kapsule: kubectl label pods -l app=hello-kiamol-x --overwrite app=hello-kiamol-2
+Komenda 39 -> wdrożenie aplikacji z pliku manifestu> kubectl apply -f pod.yaml
 
 
