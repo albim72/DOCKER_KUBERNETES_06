@@ -71,3 +71,7 @@ Komenda 36 -> wyświetlenie listy kapsuł, które mają pasującą etykietę:  k
 Komenda 37 -> dodanie nowej kapsuły opartej na zdefinjowanej etykiecie z nową etykietą:
     kubectl label pod hello-kiamol-2-787f8db75d-z8k4m app=hello-kiamol-x --overwrite
     kubectl label pods -l app=hello-kiamol-2 --overwrite app=hello-kiamol-y
+
+Komenda 38 -> przywracanie starej nazwy kapsule: kubectl label pods -l app=hello-kiamol-x --overwrite app=hello-kiamol-2
+
+
